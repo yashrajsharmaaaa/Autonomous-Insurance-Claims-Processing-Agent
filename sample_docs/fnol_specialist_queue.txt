@@ -1,0 +1,26 @@
+FIRST NOTICE OF LOSS - CLAIM REPORT
+
+Policy Information:
+Policy Number: POL-2024-998877
+Policyholder Name: David Thompson
+Policy Effective Dates: 06/01/2024 - 05/31/2025
+
+Incident Information:
+Incident Date: 11/22/2024
+Incident Time: 8:15 AM
+Incident Location: Intersection of Main Street and 5th Avenue, Downtown Metro City
+Incident Description: T-bone collision at intersection. Claimant's vehicle was proceeding through green light when another vehicle ran red light and struck driver's side door. Claimant sustained injuries including whiplash, bruised ribs, and possible concussion. Claimant was transported to Metro General Hospital by ambulance. Other driver cited for running red light.
+
+Involved Parties:
+Claimant: David Thompson
+Third Parties: Amanda Rodriguez (at-fault driver)
+Contact Details: David Thompson - (555) 345-6789, d.thompson@email.com; Amanda Rodriguez - (555) 456-7890
+
+Asset Details:
+Asset Type: Vehicle
+Asset ID: VIN 2HGFC2F59MH123456 (2021 Honda Civic)
+Estimated Damage: $18,500
+
+Claim Type: injury
+Attachments: ambulance_report.pdf, hospital_records.pdf, accident_photos.jpg, police_report.pdf, witness_statements.pdf
+Initial Estimate: $18,500 (vehicle only, medical costs TBD)

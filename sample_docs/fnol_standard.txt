@@ -1,0 +1,26 @@
+FIRST NOTICE OF LOSS - CLAIM REPORT
+
+Policy Information:
+Policy Number: POL-2024-112233
+Policyholder Name: Emily Anderson
+Policy Effective Dates: 09/01/2024 - 08/31/2025
+
+Incident Information:
+Incident Date: 11/25/2024
+Incident Time: 3:45 PM
+Incident Location: 7890 Riverside Drive, Lakewood, CA 90712
+Incident Description: Rear-end collision on busy highway during rush hour traffic. Claimant was stopped in traffic when struck from behind by another vehicle traveling at approximately 35 mph. Significant damage to rear bumper, trunk, and rear suspension. Airbags did not deploy. No injuries reported at scene, though claimant may seek medical evaluation for minor soreness.
+
+Involved Parties:
+Claimant: Emily Anderson
+Third Parties: James Patterson (at-fault driver)
+Contact Details: Emily Anderson - (555) 567-8901, emily.anderson@email.com; James Patterson - (555) 678-9012
+
+Asset Details:
+Asset Type: Vehicle
+Asset ID: VIN 3VWDP7AJ5FM123456 (2015 Volkswagen Passat)
+Estimated Damage: $32,000
+
+Claim Type: property
+Attachments: accident_photos.jpg, police_report.pdf, traffic_camera_footage.mp4
+Initial Estimate: $32,000

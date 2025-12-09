@@ -1,0 +1,26 @@
+FIRST NOTICE OF LOSS - CLAIM REPORT
+
+Policy Information:
+Policy Number: POL-2024-789456
+Policyholder Name: Sarah Johnson
+Policy Effective Dates: 01/01/2024 - 12/31/2024
+
+Incident Information:
+Incident Date: 11/15/2024
+Incident Time: 2:30 PM
+Incident Location: 1234 Oak Street, Springfield, IL 62701
+Incident Description: Minor fender bender in parking lot. Vehicle was backing out of parking space when another vehicle scraped the rear bumper. No injuries reported. Both vehicles were able to drive away from the scene.
+
+Involved Parties:
+Claimant: Sarah Johnson
+Third Parties: Michael Chen (driver of other vehicle)
+Contact Details: Sarah Johnson - (555) 123-4567, sarah.johnson@email.com; Michael Chen - (555) 987-6543
+
+Asset Details:
+Asset Type: Vehicle
+Asset ID: VIN 1HGBH41JXMN109186 (2021 Honda Accord)
+Estimated Damage: $3,500
+
+Claim Type: property
+Attachments: photos_parking_lot.jpg, police_report_minor.pdf
+Initial Estimate: $3,500
