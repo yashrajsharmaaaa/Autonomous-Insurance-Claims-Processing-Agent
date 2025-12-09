@@ -300,12 +300,27 @@ Once running, visit:
 
 
 
+## � Moore Projects
+
+I've built several other projects using AI-assisted development that demonstrate my ability to ship products quickly. Check out my GitHub profile for more examples:
+
+**GitHub Portfolio**: [https://github.com/yashrajsharmaaaa](https://github.com/yashrajsharmaaaa)
+
+Each project showcases:
+- Clean, production-ready code
+- AI-accelerated development workflow
+- Deployed, working applications
+
+I'm comfortable using AI tools to move fast while maintaining code quality - exactly the approach Synapx values.
+
+---
+
 ## 📞 Contact
 
-**Name**: [Yashraj Sharma]  
-**Email**: [yashrajsharma413@gmail.com]  
-**GitHub**: [https://github.com/yashrajsharmaaaa/]  
-**LinkedIn**: [https://www.linkedin.com/in/yashrajsharmaaaa/]
+**Name**: Yashraj Sharma  
+**Email**: yashrajsharma413@gmail.com  
+**GitHub**: https://github.com/yashrajsharmaaaa  
+**LinkedIn**: https://www.linkedin.com/in/yashrajsharmaaaa
 
 ---
 
