@@ -1,8 +1,4 @@
-# FNOL Claim Processor
-
-**Autonomous Insurance Claims Processing Agent**
-
----
+# Autonomous Insurance Claims Processing Agent
 
 ## 🌐 Live Demo - Test with Your Own FNOL Files!
 
@@ -39,88 +35,7 @@ This project demonstrates an autonomous FNOL (First Notice of Loss) claims proce
 | **Optional**: Basic prediction logic | Rule-based routing with fraud detection and damage thresholds | ✅ |
 | **Optional**: Explanation for decisions | Every route includes 1-3 sentence reasoning | ✅ |
 
-### 🚀 Quick Start (For Recruiters Testing with Your Own FNOL Files)
 
-```bash
-# 1. Clone and setup
-git clone https://github.com/yashrajsharmaaaa/Autonomous-Insurance-Claims-Processing-Agent.git
-cd Autonomous-Insurance-Claims-Processing-Agent
-pip install -r requirements.txt
-
-# 2. Get FREE Gemini API key (takes 2 minutes)
-# Visit: https://makersuite.google.com/app/apikey
-# Click "Create API Key" → Copy the key
-# Create .env file with: GEMINI_API_KEY=your_key_here
-
-# 3. Test with sample documents
-python demo.py
-
-# 4. Test with YOUR OWN FNOL file
-curl -X POST "http://localhost:8000/process-claim" \
-  -F "file=@your_fnol_document.pdf"
-
-# Or use the interactive API docs:
-uvicorn app.main:app --reload
-# Then visit: http://localhost:8000/docs
-# Click "Try it out" → Upload your file → Execute
-```
-
-**📝 Testing with Your Own Files:**
-- Supports PDF and TXT formats
-- Works with any FNOL document structure (AI adapts to format)
-- Returns structured JSON with extracted fields + routing decision + reasoning
-- Without API key: Falls back to regex (works but less accurate)
-
----
-
-### 📤 How to Test with Your Own FNOL Documents
-
-**Method 1: Command Line (Fastest)**
-```bash
-# Start the server
-uvicorn app.main:app --reload
-
-# In another terminal, test with your file
-curl -X POST "http://localhost:8000/process-claim" \
-  -F "file=@path/to/your/fnol_document.pdf"
-```
-
-**Method 2: Interactive API Docs (Easiest)**
-```bash
-# Start the server
-uvicorn app.main:app --reload
-
-# Open browser to: http://localhost:8000/docs
-# 1. Click on "POST /process-claim"
-# 2. Click "Try it out"
-# 3. Click "Choose File" and select your FNOL document
-# 4. Click "Execute"
-# 5. See the JSON response with extracted data and routing decision
-```
-
-**Method 3: Python Script**
-```python
-from app.parser import parse_document
-from app.extractor import extract_fields
-from app.router_rules import identify_missing_fields, determine_route
-from app.models import ExtractedFields
-
-# Parse your document
-text = parse_document("your_fnol.pdf", "pdf")
-
-# Extract fields
-extracted_dict = extract_fields(text)
-extracted = ExtractedFields(**extracted_dict)
-
-# Get routing decision
-missing = identify_missing_fields(extracted)
-route, reasoning = determine_route(extracted, missing)
-
-print(f"Route: {route}")
-print(f"Reasoning: {reasoning}")
-```
-
----
 
 ### 🎯 What I Built
 
@@ -248,26 +163,7 @@ I started by identifying the core challenges:
 
 ---
 
-## 🧪 Testing & Quality
 
-**Test Coverage**: 56 tests, all passing
-- Unit tests: Specific examples and edge cases
-- Property-based tests: Random inputs to verify correctness
-- Integration tests: End-to-end workflows
-
-**Coverage by Module**:
-- `models.py`: 100%
-- `router_rules.py`: 95%
-- `extractor.py`: 84%
-- `parser.py`: 69%
-
-**Run Tests**:
-```bash
-pytest -v                    # All tests
-pytest --cov=app tests/      # With coverage
-```
-
----
 
 ## 🚀 Setup & Usage
 
@@ -402,40 +298,14 @@ Once running, visit:
 
 ---
 
-## 🤔 Design Trade-offs
 
-**AI vs Rules**
-- Chose AI-first for flexibility with document formats
-- Added rule-based fallback for reliability
-- Trade-off: Requires API key but handles variations better
-
-**Priority vs Scoring**
-- Chose priority-based sequential evaluation
-- Trade-off: Less flexible but more predictable and testable
-
-**Testing Depth**
-- Invested in comprehensive testing (56 tests)
-- Trade-off: More upfront time but higher confidence
-
----
-
-## 🎯 If I Had More Time
-
-1. **Web UI**: Simple dashboard for uploading and viewing results
-2. **Confidence Scores**: Add confidence metrics to extraction
-3. **Batch Processing**: Handle multiple documents at once
-4. **OCR Support**: Process scanned PDFs
-5. **Database**: Store claims for historical analysis
-6. **Custom ML Model**: Train on historical data for better routing
-
----
 
 ## 📞 Contact
 
-**Name**: [Your Name]  
-**Email**: [Your Email]  
-**GitHub**: [Your GitHub]  
-**LinkedIn**: [Your LinkedIn]
+**Name**: [Yashraj Sharma]  
+**Email**: [yashrajsharma413@gmail.com]  
+**GitHub**: [https://github.com/yashrajsharmaaaa/]  
+**LinkedIn**: [https://www.linkedin.com/in/yashrajsharmaaaa/]
 
 ---
 
@@ -443,7 +313,7 @@ Once running, visit:
 
 Thank you for reviewing my assessment! I'm excited about the opportunity to join Synapx and contribute to building products that ship fast and matter. I'm comfortable with AI tools, enjoy solving messy problems with clean logic, and thrive in fast-paced, product-first environments.
 
-I'm happy to discuss any aspect of this implementation, walk through the code, or answer questions about my approach.
+I'm happy to discuss any aspect of this implementation.
 
 ---
 
