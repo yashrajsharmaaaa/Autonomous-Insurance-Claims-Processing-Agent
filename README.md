@@ -1,10 +1,6 @@
-# FNOL Claim Processor - Synapx Assessment
+# FNOL Claim Processor
 
 **Autonomous Insurance Claims Processing Agent**
-
-Built by: [Your Name]  
-Position: Junior Software Engineer - Synapx  
-Date: December 2024
 
 ---
 
@@ -23,18 +19,88 @@ This project demonstrates an autonomous FNOL (First Notice of Loss) claims proce
 | **Optional**: Basic prediction logic | Rule-based routing with fraud detection and damage thresholds | ✅ |
 | **Optional**: Explanation for decisions | Every route includes 1-3 sentence reasoning | ✅ |
 
-### 🚀 Quick Demo
+### 🚀 Quick Start (For Recruiters Testing with Your Own FNOL Files)
 
 ```bash
-# 1. Install dependencies
+# 1. Clone and setup
+git clone https://github.com/yashrajsharmaaaa/Autonomous-Insurance-Claims-Processing-Agent.git
+cd Autonomous-Insurance-Claims-Processing-Agent
 pip install -r requirements.txt
 
-# 2. Run demo (works without API key)
+# 2. Get FREE Gemini API key (takes 2 minutes)
+# Visit: https://makersuite.google.com/app/apikey
+# Click "Create API Key" → Copy the key
+# Create .env file with: GEMINI_API_KEY=your_key_here
+
+# 3. Test with sample documents
 python demo.py
 
-# 3. Run tests (56 tests, all passing)
-pytest -v
+# 4. Test with YOUR OWN FNOL file
+curl -X POST "http://localhost:8000/process-claim" \
+  -F "file=@your_fnol_document.pdf"
+
+# Or use the interactive API docs:
+uvicorn app.main:app --reload
+# Then visit: http://localhost:8000/docs
+# Click "Try it out" → Upload your file → Execute
 ```
+
+**📝 Testing with Your Own Files:**
+- Supports PDF and TXT formats
+- Works with any FNOL document structure (AI adapts to format)
+- Returns structured JSON with extracted fields + routing decision + reasoning
+- Without API key: Falls back to regex (works but less accurate)
+
+---
+
+### 📤 How to Test with Your Own FNOL Documents
+
+**Method 1: Command Line (Fastest)**
+```bash
+# Start the server
+uvicorn app.main:app --reload
+
+# In another terminal, test with your file
+curl -X POST "http://localhost:8000/process-claim" \
+  -F "file=@path/to/your/fnol_document.pdf"
+```
+
+**Method 2: Interactive API Docs (Easiest)**
+```bash
+# Start the server
+uvicorn app.main:app --reload
+
+# Open browser to: http://localhost:8000/docs
+# 1. Click on "POST /process-claim"
+# 2. Click "Try it out"
+# 3. Click "Choose File" and select your FNOL document
+# 4. Click "Execute"
+# 5. See the JSON response with extracted data and routing decision
+```
+
+**Method 3: Python Script**
+```python
+from app.parser import parse_document
+from app.extractor import extract_fields
+from app.router_rules import identify_missing_fields, determine_route
+from app.models import ExtractedFields
+
+# Parse your document
+text = parse_document("your_fnol.pdf", "pdf")
+
+# Extract fields
+extracted_dict = extract_fields(text)
+extracted = ExtractedFields(**extracted_dict)
+
+# Get routing decision
+missing = identify_missing_fields(extracted)
+route, reasoning = determine_route(extracted, missing)
+
+print(f"Route: {route}")
+print(f"Reasoning: {reasoning}")
+```
+
+---
 
 ### 🎯 What I Built
 
