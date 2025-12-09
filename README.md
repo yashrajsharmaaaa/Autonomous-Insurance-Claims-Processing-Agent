@@ -4,6 +4,26 @@
 
 ---
 
+## 🌐 Live Demo - Test with Your Own FNOL Files!
+
+**Try it now (no setup required):** [https://fnol-agent.onrender.com/docs](https://fnol-agent.onrender.com/docs)
+
+### How to Test:
+1. Click the link above to open the interactive API
+2. Click on **"POST /process-claim"** to expand it
+3. Click **"Try it out"** button
+4. Click **"Choose File"** and upload your FNOL document (PDF or TXT)
+5. Click **"Execute"**
+6. See the JSON response with:
+   - ✅ Extracted fields (policy info, incident details, etc.)
+   - ✅ Missing mandatory fields (if any)
+   - ✅ Recommended routing decision
+   - ✅ Human-readable reasoning
+
+**No installation, no API key needed - just upload and test!**
+
+---
+
 ## 📋 Assessment Submission
 
 This project demonstrates an autonomous FNOL (First Notice of Loss) claims processing system that extracts structured data from documents, validates completeness, and intelligently routes claims to appropriate workflows.
